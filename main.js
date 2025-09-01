@@ -2,7 +2,7 @@ const all = document.querySelector(".all");
 
 function add_main_menu_button() {
     all.style.marginTop = "100px";
-    all.innerHTML += `<div class="btn fixed-btn wide" onclick="main_menu()">Вернуться на главное меню</div>`
+    all.innerHTML += `<div class="btn fixed-btn wide" onclick="main_menu()">На главное меню</div>`
 }
 
 window.main_menu = function() {
