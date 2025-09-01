@@ -232,9 +232,9 @@ window.answer_form_n2 = function() {
                 </li></p>
             </ul>
         </div>
-        <div class="btn" onclick="window.location.href='https://drive.google.com/file/d/1ZwaDP82nnFZ1iftG3NNbqxPKf2XdTVoo/view?usp=sharing'">Ссылка на бланки ОГЭ (для печати)</div>
+        <div class="btn width" onclick="window.location.href='https://drive.google.com/file/d/1ZwaDP82nnFZ1iftG3NNbqxPKf2XdTVoo/view?usp=sharing'">Ссылка на бланки ОГЭ (для печати)</div>
         <br>
-        <div class="btn" onclick="window.location.href='https://drive.google.com/drive/folders/1NeoTa9jO57lp4c7EwQbDhMjWYgwzGpJm?usp=sharing'">Ссылка на папку с оформлениями<br>бланков ответов</div>
+        <div class="btn width" onclick="window.location.href='https://drive.google.com/drive/folders/1NeoTa9jO57lp4c7EwQbDhMjWYgwzGpJm?usp=sharing'">Ссылка на папку с оформлениями<br>бланков ответов</div>
     </div>`;
 }
 
