@@ -1,3 +1,7 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
 body {
     font-family: Arial, sans-serif;
     font-size: clamp(24px, 4vw, 36px);
@@ -8,10 +12,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-}
-
-.all {
-    margin-top: 100px;
 }
 
 .container {
@@ -44,10 +44,11 @@ h1 {
 }
 
 .btn {
-    padding: 30px 20px;
+    box-sizing: border-box;
+    padding: 2em;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    font-size: clamp(16px, 2vw, 22px);
+    font-size: clamp(12px, 2vw, 22px);
     font-weight: bold;
     line-height: 1.4;
     text-align: center;
@@ -113,7 +114,9 @@ h1 {
 }
 
 .fixed-btn {
+    white-space: nowrap;
     position: fixed;
+    width: auto;
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
