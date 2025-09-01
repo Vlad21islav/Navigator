@@ -20,9 +20,19 @@ window.principles_of_taking_marks = function() {
     <div class="container">
         <h1>Принципы получения оценок</h1>
         <div class="grid">
-            <div class="btn btn-blue wide" onclick="">Выдержки из школьного<br>положения об оценивании<br>(как ставят оценки в аттестат)</div>
+            <div class="btn btn-blue wide" onclick="attestation_marks()">Выдержки из школьного<br>положения об оценивании<br>(как ставят оценки в аттестат)</div>
             <div class="btn btn-blue" onclick="final_grades_in_maths()">Итоговые<br>оценки по<br>математике</div>
             <div class="btn btn-blue" onclick="current_grades_in_maths()">Виды текущих<br>оценок по<br>математике</div>
+        </div>
+    </div>`;
+}
+
+window.attestation_marks = function() {
+    // обработка нажатия на кнопку "Выдержки из школьного положения об оценивании"
+    document.body.innerHTML = `
+    <div class="container">
+        <div class="text-container">
+            <img src="images/attestation marks.png" style="width: 100%; height: auto; object-fit: cover;" alt="Пример">
         </div>
     </div>`;
 }
@@ -118,8 +128,8 @@ window.demo_versions = function() {
     document.body.innerHTML = `
     <div class="container">
         <h1>Демоверсии проверочных работ</h1>
-        <div class="grid">
-            <div class="btn btn-orange wide" onclick="">Материалы будут добавляться постепенно, по мере создания демоверсий</div>
+        <div class="text-container text-orange">
+            Материалы будут добавляться постепенно, по мере создания демоверсий
         </div>
     </div>`;
 }
