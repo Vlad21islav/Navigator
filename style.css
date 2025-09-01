@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    font-size: clamp(18px, 2vw, 30px);
+    font-size: clamp(15px, 2vw, 30px);
     text-align: left;
     padding: 20px;
     width: 100%;
@@ -21,33 +21,10 @@ body {
 .text-container {
     width: 80%;
     margin: 20px auto;
-    background-color: #fff; /* Белый фон для контента */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px; /*  Скругление углов */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-}
-    td:last-child { /* Стилизуем последнюю колонку (ИТОГ) */
-    border-left: 2px solid black; /* Более толстая граница слева */
-}
-
-.blue-text {
-    color: #33338d;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -58,18 +35,8 @@ h1 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* максимум 2 кнопки */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
-
-/* На маленьком экране — по одной кнопке */
-@media (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-    .btn.wide {
-        grid-column: auto; /* на телефоне wide снова становится обычной */
-    }
 }
 
 .btn {
@@ -92,7 +59,6 @@ h1 {
     transform: translateY(-5px);
 }
 
-/* растягивает кнопку на 2 колонки */
 .btn.wide {
     grid-column: span 2;
 }
