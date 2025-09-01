@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
 }
 
+.all {
+    margin-top: 100px;
+}
+
 .container {
     font-size: clamp(15px, 2vw, 30px);
     text-align: left;
@@ -63,7 +67,7 @@ h1 {
     grid-column: span 2;
 }
 
-.btn-blue {
+.btn-green {
     background: linear-gradient(to bottom, #00f5ff, #56f9a8);
     color: black;
 }
@@ -83,7 +87,12 @@ h1 {
     color: black;
 }
 
-.text-blue {
+.btn-blue {
+    background: linear-gradient(to bottom, #007bea, #ec5b06);
+    color: black;
+}
+
+.text-green {
     background: linear-gradient(to bottom, #00f5ff, #56f9a8);
     color: black;
 }
@@ -101,4 +110,16 @@ h1 {
 .text-yellow {
     background: linear-gradient(to bottom, #ffef55, #feb105);
     color: black;
+}
+
+.fixed-btn {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* чтобы кнопка была поверх всего */
+}
+
+.fixed-btn:hover {
+    transform: translateX(-50%) translateY(-5px);
 }

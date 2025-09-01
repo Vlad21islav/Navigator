@@ -1,9 +1,17 @@
+const all = document.querySelector(".all");
+
+function add_main_menu_button() {
+    all.style.marginTop = "100px";
+    all.innerHTML += `<div class="btn fixed-btn wide" onclick="main_menu()">Вернуться на главное меню</div>`
+}
+
 window.main_menu = function() {
-    document.body.innerHTML = `
+    all.style.marginTop = "0px";
+    all.innerHTML = `
     <div class="container">
         <h1>Навигатор по математике</h1>
         <div class="grid">
-            <button class="btn btn-blue" onclick="principles_of_taking_marks()">Принципы<br>получения<br>оценок</button>
+            <button class="btn btn-green" onclick="principles_of_taking_marks()">Принципы<br>получения<br>оценок</button>
             <div class="btn btn-orange" onclick="demo_versions()">Демоверсии<br>проверочных<br>работ</div>
             <div class="btn btn-purple" onclick="classworks()">Классные<br>работы</div>
             <div class="btn" onclick="base_criteria()">Базовые<br>критерии<br>проверки ДЗ</div>
@@ -16,30 +24,32 @@ window.main_menu = function() {
 
 window.principles_of_taking_marks = function() {
     // обработка нажатия на кнопку "Принципы получения оценок"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Принципы получения оценок</h1>
         <div class="grid">
-            <div class="btn btn-blue wide" onclick="attestation_marks()">Выдержки из школьного<br>положения об оценивании<br>(как ставят оценки в аттестат)</div>
-            <div class="btn btn-blue" onclick="final_grades_in_maths()">Итоговые<br>оценки по<br>математике</div>
-            <div class="btn btn-blue" onclick="current_grades_in_maths()">Виды текущих<br>оценок по<br>математике</div>
+            <div class="btn btn-green wide" onclick="attestation_marks()">Выдержки из школьного<br>положения об оценивании<br>(как ставят оценки в аттестат)</div>
+            <div class="btn btn-green" onclick="final_grades_in_maths()">Итоговые<br>оценки по<br>математике</div>
+            <div class="btn btn-green" onclick="current_grades_in_maths()">Виды текущих<br>оценок по<br>математике</div>
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.attestation_marks = function() {
     // обработка нажатия на кнопку "Выдержки из школьного положения об оценивании"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <div class="text-container">
             <img src="images/attestation marks.png" style="width: 100%; height: auto; object-fit: cover;" alt="Пример">
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.final_grades_in_maths = function() {
     // обработка нажатия на кнопку "Итоговые оценки по математике"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Итоговые оценки по математике</h1>
         <div class="text-container">
@@ -75,11 +85,12 @@ window.final_grades_in_maths = function() {
             <p>Для предмета «вероятность и статистика» не применяется первый пункт.</p>
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.current_grades_in_maths = function() {
     // обработка нажатия на кнопку "Виды текущих оценок по математике"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Текущие оценки по математике</h1>
         <div class="text-container">
@@ -121,22 +132,24 @@ window.current_grades_in_maths = function() {
             </ol>
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.demo_versions = function() {
     // обработка нажатия на кнопку "Демоверсии проверочных работ"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Демоверсии проверочных работ</h1>
         <div class="text-container text-orange">
             Материалы будут добавляться постепенно, по мере создания демоверсий
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.classworks = function() {
     // обработка нажатия на кнопку "Классные работы"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Классные работы</h1>
         <div class="grid">
@@ -144,11 +157,12 @@ window.classworks = function() {
             <div class="btn btn-purple wide" onclick="window.location.href='https://drive.google.com/drive/folders/1s_4SYbQvXqbWhbxTVwCpNUWs57X7pSzD?usp=sharing'">Ссылка на папку с классными работами</div>
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.base_criteria = function() {
     // обработка нажатия на кнопку "Базовые критерии проверки ДЗ"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Базовые критерии проверки ДЗ</h1>
         <div class="text-container">
@@ -186,11 +200,12 @@ window.base_criteria = function() {
             оценку за домашнюю работу на один балл
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.feedback = function() {
     // обработка нажатия на кнопку "Обратная связь"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Обратная связь</h1>
         <div class="text-container">
@@ -201,11 +216,12 @@ window.feedback = function() {
         </div>
         <div class="btn wide" onclick="window.location.href='https://github.com/Vlad21islav/Navigator/discussions/1#discussion-8828367'">По вопросам работоспособности сайта лучше писать через github</div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.schedule_of_improvements = function() {
     // обработка нажатия на кнопку "Расписание исправлений"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Расписание исправлений</h1>
         <div class="text-container text-yellow">
@@ -214,11 +230,12 @@ window.schedule_of_improvements = function() {
             О других днях для исправлений или оботсутствии исправлений в пятницу сообщаетсяотдельно
         </div>
     </div>`;
+    add_main_menu_button();
 }
 
 window.answer_form_n2 = function() {
     // обработка нажатия на кнопку "Оформление бланков ответов №2"
-    document.body.innerHTML = `
+    all.innerHTML = `
     <div class="container">
         <h1>Оформление бланков ответов №2</h1>
         <div class="text-container">
@@ -246,6 +263,7 @@ window.answer_form_n2 = function() {
         <br>
         <div class="btn width" onclick="window.location.href='https://drive.google.com/drive/folders/1NeoTa9jO57lp4c7EwQbDhMjWYgwzGpJm?usp=sharing'">Ссылка на папку с оформлениями<br>бланков ответов</div>
     </div>`;
+add_main_menu_button();
 }
 
 main_menu();
