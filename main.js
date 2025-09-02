@@ -11,13 +11,13 @@ window.main_menu = function() {
     <div class="container">
         <h1>Навигатор по математике</h1>
         <div class="grid">
-            <button class="btn btn-green" onclick="principles_of_taking_marks()">Принципы<br>получения<br>оценок</button>
-            <div class="btn btn-orange" onclick="demo_versions()">Демоверсии<br>проверочных<br>работ</div>
-            <div class="btn btn-purple" onclick="classworks()">Классные<br>работы</div>
-            <div class="btn" onclick="base_criteria()">Базовые<br>критерии<br>проверки ДЗ</div>
-            <div class="btn" onclick="feedback()">Обратная<br>связь</div>
-            <div class="btn btn-yellow" onclick="schedule_of_improvements()">Расписание<br>исправлений</div>
-            <div class="btn wide" onclick="answer_form_n2()">Оформление<br>бланков<br>ответов №2</div>
+            <button class="btn turquoise-green" onclick="principles_of_taking_marks()">Принципы<br>получения<br>оценок</button>
+            <div class="btn red-orange" onclick="demo_versions()">Демоверсии<br>проверочных<br>работ</div>
+            <div class="btn violet-pink" onclick="classworks()">Классные<br>работы</div>
+            <div class="btn blue" onclick="base_criteria()">Базовые<br>критерии<br>проверки ДЗ</div>
+            <div class="btn red" onclick="feedback()">Обратная<br>связь</div>
+            <div class="btn yellow-orange" onclick="schedule_of_improvements()">Расписание<br>исправлений</div>
+            <div class="btn wide green" onclick="answer_form_n2()">Оформление<br>бланков<br>ответов №2</div>
         </div>
     </div>`;
 }
@@ -28,9 +28,9 @@ window.principles_of_taking_marks = function() {
     <div class="container">
         <h1>Принципы получения оценок</h1>
         <div class="grid">
-            <div class="btn btn-green wide" onclick="attestation_marks()">Выдержки из школьного<br>положения об оценивании<br>(как ставят оценки в аттестат)</div>
-            <div class="btn btn-green" onclick="final_grades_in_maths()">Итоговые<br>оценки по<br>математике</div>
-            <div class="btn btn-green" onclick="current_grades_in_maths()">Виды текущих<br>оценок по<br>математике</div>
+            <div class="btn turquoise-green wide" onclick="attestation_marks()">Выдержки из школьного<br>положения об оценивании<br>(как ставят оценки в аттестат)</div>
+            <div class="btn turquoise-green" onclick="final_grades_in_maths()">Итоговые<br>оценки по<br>математике</div>
+            <div class="btn turquoise-green" onclick="current_grades_in_maths()">Виды текущих<br>оценок по<br>математике</div>
         </div>
     </div>`;
     add_main_menu_button();
@@ -52,7 +52,7 @@ window.final_grades_in_maths = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Итоговые оценки по математике</h1>
-        <div class="text-container">
+        <div class="text-container turquoise-green">
             Полугодовая оценка по алгебре, геометрии и вероятности выставляется следующим образом:
 
             <ol>
@@ -93,7 +93,7 @@ window.current_grades_in_maths = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Текущие оценки по математике</h1>
-        <div class="text-container">
+        <div class="text-container turquoise-green">
             Виды текущих оценок по математике
 
             <ol>
@@ -140,7 +140,7 @@ window.demo_versions = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Демоверсии проверочных работ</h1>
-        <div class="text-container text-orange">
+        <div class="text-container red-orange">
             Материалы будут добавляться постепенно, по мере создания демоверсий
         </div>
     </div>`;
@@ -153,8 +153,8 @@ window.classworks = function() {
     <div class="container">
         <h1>Классные работы</h1>
         <div class="grid">
-            <div class="btn btn-purple wide" onclick="window.location.href='https://drive.google.com/drive/folders/1Eju9UBANfp2gaNm55Vwxfixi00zjLL20?usp=sharing'">Что нужно для получения оценки за оцифровку классной работы, а также примеры оцифровки</div>
-            <div class="btn btn-purple wide" onclick="window.location.href='https://drive.google.com/drive/folders/1s_4SYbQvXqbWhbxTVwCpNUWs57X7pSzD?usp=sharing'">Ссылка на папку с классными работами</div>
+            <div class="btn violet-pink wide" onclick="window.location.href='https://drive.google.com/drive/folders/1Eju9UBANfp2gaNm55Vwxfixi00zjLL20?usp=sharing'">Что нужно для получения оценки за оцифровку классной работы, а также примеры оцифровки</div>
+            <div class="btn violet-pink wide" onclick="window.location.href='https://drive.google.com/drive/folders/1s_4SYbQvXqbWhbxTVwCpNUWs57X7pSzD?usp=sharing'">Ссылка на папку с классными работами</div>
         </div>
     </div>`;
     add_main_menu_button();
@@ -165,7 +165,7 @@ window.base_criteria = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Базовые критерии проверки ДЗ</h1>
-        <div class="text-container">
+        <div class="text-container blue">
             Базовые критерии домашней работы (оформление)
 
             <ul>
@@ -208,14 +208,14 @@ window.feedback = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Обратная связь</h1>
-        <div class="text-container">
+        <div class="text-container red">
             По всем вопросам и предложениям можно
             обращаться в личные сообщения в телеграмм
             <br><br>
             Чаще всего буду отвечать не раньше 20:00
         </div>
         <div class="grid">
-            <div class="btn wide" onclick="window.location.href='https://github.com/Vlad21islav/Navigator/discussions/1#discussion-8828367'">По вопросам работоспособности сайта лучше писать через github</div>
+            <div class="btn wide  red" onclick="window.location.href='https://github.com/Vlad21islav/Navigator/discussions/1#discussion-8828367'">По вопросам работоспособности сайта лучше писать через github</div>
         </div>    
     </div>`;
     add_main_menu_button();
@@ -226,7 +226,7 @@ window.schedule_of_improvements = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Расписание исправлений</h1>
-        <div class="text-container text-yellow">
+        <div class="text-container yellow-orange">
             Исправление работ проводится с 7:30 до 8:10 по пятницам
             <br><br>
             О других днях для исправлений или оботсутствии исправлений в пятницу сообщаетсяотдельно
@@ -240,7 +240,7 @@ window.answer_form_n2 = function() {
     all.innerHTML = `
     <div class="container">
         <h1>Оформление бланков ответов №2</h1>
-        <div class="text-container">
+        <div class="text-container green">
             Для получения оценки за пример оформления бланков ответов №2 необходимо:
 
             <ul>
@@ -262,8 +262,8 @@ window.answer_form_n2 = function() {
             </ul>
         </div>
         <div class="grid">
-            <div class="btn wide" onclick="window.location.href='https://drive.google.com/file/d/1ZwaDP82nnFZ1iftG3NNbqxPKf2XdTVoo/view?usp=sharing'">Ссылка на бланки ОГЭ (для печати)</div>
-            <div class="btn wide" onclick="window.location.href='https://drive.google.com/drive/folders/1NeoTa9jO57lp4c7EwQbDhMjWYgwzGpJm?usp=sharing'">Ссылка на папку с оформлениями<br>бланков ответов</div>
+            <div class="btn wide green" onclick="window.location.href='https://drive.google.com/file/d/1ZwaDP82nnFZ1iftG3NNbqxPKf2XdTVoo/view?usp=sharing'">Ссылка на бланки ОГЭ (для печати)</div>
+            <div class="btn wide green" onclick="window.location.href='https://drive.google.com/drive/folders/1NeoTa9jO57lp4c7EwQbDhMjWYgwzGpJm?usp=sharing'">Ссылка на папку с оформлениями<br>бланков ответов</div>
         </div>
     </div>`;
 add_main_menu_button();

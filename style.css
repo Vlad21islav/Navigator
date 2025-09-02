@@ -69,49 +69,39 @@ h1 {
     grid-column: span 2;
 }
 
-.btn-green {
+.turquoise-green {
     background: linear-gradient(to bottom, #00f5ff, #56f9a8);
     color: black;
 }
 
-.btn-orange {
+.red-orange {
     background: linear-gradient(to bottom, #ff6b6b, #ffa94d);
     color: white;
 }
 
-.btn-purple {
+.violet-pink {
     background: linear-gradient(to bottom, #a66bff, #ff85c1);
     color: white;
 }
 
-.btn-yellow {
+.yellow-orange {
     background: linear-gradient(to bottom, #ffef55, #feb105);
     color: black;
 }
 
-.btn-blue {
-    background: linear-gradient(to bottom, #007bea, #ec5b06);
-    color: black;
-}
-
-.text-green {
-    background: linear-gradient(to bottom, #00f5ff, #56f9a8);
-    color: black;
-}
-
-.text-orange {
-    background: linear-gradient(to bottom, #ff6b6b, #ffa94d);
+.blue {
+    background: linear-gradient(to bottom, #6d97fa, #a522fc);
     color: white;
 }
 
-.text-purple {
-    background: linear-gradient(to bottom, #a66bff, #ff85c1);
+.red {
+    background: linear-gradient(to bottom, #f55a8d, #ff0000);
     color: white;
 }
 
-.text-yellow {
-    background: linear-gradient(to bottom, #ffef55, #feb105);
-    color: black;
+.green {
+    background: linear-gradient(to bottom, #00b09b, #96c93d);
+    color: white;
 }
 
 .fixed-btn {
