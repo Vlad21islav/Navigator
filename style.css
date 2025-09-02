@@ -115,6 +115,7 @@ h1 {
 }
 
 .fixed-btn {
+    font-size: clamp(12px, 2vw, 18px);
     white-space: nowrap;
     position: fixed;
     width: auto;
