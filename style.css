@@ -23,6 +23,7 @@ body {
 }
 
 .text-container {
+    font-weight: bold;
     width: 80%;
     margin: 20px auto;
     background-color: #fff;
