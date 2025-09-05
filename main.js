@@ -1,12 +1,12 @@
 const all = document.querySelector(".all");
 
 function add_main_menu_button() {
-    all.style.marginTop = "100px";
+    all.style.paddingBottom  = "120px";
     all.innerHTML += `<div class="btn fixed-btn wide" onclick="main_menu()">На главное меню</div>`
 }
 
 window.main_menu = function() {
-    all.style.marginTop = "0px";
+    all.style.paddingBottom  = "0px";
     all.innerHTML = `
     <div class="container">
         <h1>Навигатор по математике</h1>
